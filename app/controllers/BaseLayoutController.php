@@ -25,13 +25,13 @@ class BaseLayoutController extends BaseController
     {
         parent::setupLayout();
 
-        $this->layout->title = 'Nature\'s Protector';
+        $this->layout->title = 'Guide Me';
 
-        $this->layout->description = 'Nature\'s Protector allows people who care about the environment to contribute in keeping it safe by reporting dirty places. People from all around the globe can come together as a community to save our precious planet.';
+        $this->layout->description = 'Guide me a net plateform that connects people in need.';
 
         $this->layout->meta = [
-            'og:site_name' => 'Nature\'s protector',
-            'fb:app_id' => \Config::get('oauthServices.facebook.key'),
+            'og:site_name' => 'Guide me',
+            //'fb:app_id' => \Config::get('oauthServices.facebook.key'),
             'og:image'  => URL::asset('img/logo.png')
         ];
     }
