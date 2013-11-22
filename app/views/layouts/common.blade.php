@@ -7,19 +7,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		@unless(array_key_exists('og:title', $meta))
-			<meta property="og:title" content="{{{ $title }}}"> 
+			<meta property="og:title" content="{{{ $title }}}">
 		@endif
 
 		@unless(array_key_exists('og:description', $meta))
-			<meta property="og:description" content="{{{ $description }}}"> 
+			<meta property="og:description" content="{{{ $description }}}">
 		@endif
 
 		@foreach($meta as $property => $contents)
-			<meta property="{{ $property }}" content="{{{ $contents }}}"> 
+			<meta property="{{ $property }}" content="{{{ $contents }}}">
 		@endforeach
 		
-		<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-		<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<link href="{{ URL::asset('stylesheets/screen.css') }}" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="{{ URL::asset('stylesheets/print.css') }}" media="print" rel="stylesheet" type="text/css" />
 		
 		<!--[if IE]>
 			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
