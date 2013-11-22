@@ -1,0 +1,60 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
+#registration_form {
+	text-align: center;
+	margin: 0 auto;
+
+	width: 344px;
+
+	h1 {
+		margin-bottom: 25px;
+	}
+
+	.title {
+		color: #333;
+		font-size: 17px;
+	}
+
+	.linked_content {
+		font-size: 17px;
+	}
+
+	div {
+		margin-bottom: 20px;
+		padding-left: 7px;
+	}
+
+	.alert {
+		width: 289px;
+
+		margin: 0 0 10px;
+	}
+
+	.button2 {
+		display: block;
+		margin-top: 10px;
+
+		width: 345px;
+
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+#account_informations
+{
+	background: #eee;
+
+	width: 325px;
+	padding: 30px 10px 10px;
+
+	margin: 0 auto;
+
+	text-align: left;
+	text-shadow: 0 1px white;
+
+	@include border-radius(5px, 5px);
+	
+	@include box-shadow(inset 0 1px 3px 0 rgba(0, 0, 0, 0.1));
+}

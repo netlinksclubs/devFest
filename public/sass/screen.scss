@@ -1,0 +1,73 @@
+@import "base";
+
+@import "fonts/font-awesome/font-awesome";
+@import "fonts/font-awesome-extention";
+
+@import "animations/animations";
+
+@import "layouts/common";
+
+@import "jquery/powertip";
+
+@import "forms/form1";
+
+@import "bootstrap/alerts";
+@import "bootstrap/pagination";
+
+@import "buttons/buttons";
+
+@import "boxes/boxes";
+
+@import "pages/index";
+@import "pages/registration";
+@import "pages/report/details";
+@import "pages/report/report";
+@import "pages/report/index";
+
+@import "pages/map/index";
+
+@import "thirdParty/facebook";
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+body {
+    color: #333;
+    font-family: "helvetica neue", "Century Gothic", sans-serif;
+
+    font-weight: 300;
+}
+
+.normalWeight {
+    font-weight: 500;
+}
+
+.alert {
+    list-style: none;
+
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.common-container {
+    width: 90%;
+    max-width: 960px;
+    min-width: 289px;
+
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0CB6EC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00D6FF;
+}

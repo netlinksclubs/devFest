@@ -1,0 +1,28 @@
+/*
+* Form1
+*/
+.form1 {
+	input, textarea
+	{
+		width: 322px;
+		border: 1px solid #ededed;
+		padding: 2px 10px;
+
+		font-size: 19px;
+
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-o-border-radius: 4px;
+	}
+
+	input {
+		height: 30px;
+		line-height: 30px;
+
+		&:active
+		{
+			border-color: #c5c742;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
+
+.userBox {
+    width: 40%;
+    min-width: 200px;
+    max-width: 500px;
+    
+    min-height: 300px;
+
+    margin: 15px 5%;
+    padding: 20px;
+
+    background: #fff;
+
+    border: 1px solid #E0E0E0;
+
+    @include box-sizing(border-box);
+
+    @media screen and (max-width: 600px) {
+        width: 90%;
+
+        margin: 15px 5%;
+    }
+
+    .userPic {
+        margin: 0 auto 20px;
+    }
+
+    .userTitle {
+        margin-bottom: 10px;
+
+        text-align: center;
+    }
+
+    .userInfo {
+        margin: 0 0 20px;
+
+        text-align: justify;
+
+        font-size: 15px;
+    }
+
+    .userSocialInfo {
+        font-size: 29px;
+
+        a {
+            margin-right: 5px;
+        }
+    }
+}
+
+.roundedPic {
+    width: 50%;
+
+    @include box-shadow(0 0 0 7px #F1F1F1);
+
+    display: block;
+
+    @include border-radius(100%);
+}

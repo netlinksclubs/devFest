@@ -1,0 +1,150 @@
+@import "compass/css3/box-sizing";
+@import "compass/css3/transition";
+
+#report-page{
+	#image {
+		width: 960px;
+		height: 500px;
+
+		margin: 0 auto;
+
+		background-position: center;
+		background-repeat: no-repeat;
+
+		border: 1px solid #ccc;
+
+		overflow: hidden;
+
+		#data-container {
+			@include transition(margin-top 0.15s ease-in);
+
+			margin-top: -276px;
+
+			position: relative;
+
+			&.mapDisplayed {
+				margin-top: 0;
+			}
+
+			&.photoDisplayed {
+				margin-top: -500px;
+			}
+
+			#map {
+				width: 960px;
+				height: 275px;
+			}
+			
+			#data {
+				background: #fefefe;
+
+				@include box-sizing(border-box);
+
+				position: relative;
+
+				height: 225px;
+				padding: 20px 15px;
+
+				font-weight: 100;
+
+				border-top: 1px solid #efefef;
+
+				h1 {
+					display: inline-block;
+
+					color: #666;
+
+					text-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.9);
+
+					margin: 0 0 5px;
+
+					font-size: 30px;
+					font-weight: 100;
+				}
+
+				.report-info {
+					margin-left: 10px;
+					color: #cccccc;
+				}
+
+				#description {
+					color: #999;
+
+					font-size: 20px;
+
+					display: block;
+				}
+
+				.report-place {
+					color: #333;
+
+					font-size: 20px;
+
+					cursor: pointer;
+
+					position: absolute;
+					bottom: 10px;
+
+					.icon-map-marker {
+						font-size: 30px;
+					}
+
+					&:hover {
+						color: #66aeff;
+					}
+				}
+
+				.report-share {
+					font-size: 14px;
+
+					position: absolute;
+					bottom: 10px;
+					right: 20px;
+
+					span {
+						font-weight: 300;
+					}
+
+					a {
+						font-size: 24px;
+
+						margin: 0 0 0 5px;
+					}
+				}
+			}
+
+			.bottom-border {
+				background: rgba(255, 255, 255, 0.5);
+
+				height: 5px;
+			}
+
+			.enlarge-photo-button {
+				background-color: rgba(0, 0, 0, 0.6);
+
+				@include border-radius(7px);
+
+				width: 40px;
+				height: 40px;
+
+				position: absolute;
+				bottom: -45px;
+				right: 5px;
+
+				color: #fff;
+
+				line-height: 40px;
+				text-align: center;
+				font-size: 23px;
+
+				text-shadow: 0 1px #000;
+
+				cursor: pointer;
+
+				&:hover {
+					background-color: rgba(10, 153, 255, 0.6)
+				}
+			}
+		}
+	}
+}

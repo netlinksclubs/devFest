@@ -1,0 +1,25 @@
+@import "down";
+@import "show";
+@import "smokemove";
+@import "sunshine";
+@import "up";
+
+#animation1
+{
+	position: absolute;
+	width: 100%;
+	bottom: 14px;
+	animation:up 6s ease-out 0s;
+	-webkit-animation:up 6s ease-out 0s;
+}
+
+#animation2
+{
+	position: absolute;
+	width: 100%;
+	height: 270px;
+	bottom: -250px;
+
+	animation:down 3s ease-out 0s;
+	-webkit-animation:down 3s ease-out 0s;
+}

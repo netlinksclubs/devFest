@@ -1,0 +1,49 @@
+@keyframes "sunshine" {
+	0%,30% {
+	background: #aeaa98 url("../img/bg.png") repeat-x bottom;
+}
+ 100% {
+    background: #DFFBFD url("../img/bg.png") repeat-x bottom;
+    /*#DFFBFD,#AAE9EC*/ }
+
+}
+
+@-moz-keyframes sunshine {
+	0%,30% {
+	background: #aeaa98 url("../img/bg.png") repeat-x bottom;
+}
+ 100% {
+   background: #DFFBFD url("../img/bg.png") repeat-x bottom;
+   /*#DFFBFD,#AAE9EC*/ }
+
+}
+
+@-webkit-keyframes "sunshine" {
+	0%,30% {
+	background: #aeaa98 url("../img/bg.png") repeat-x bottom;
+}
+ 100% {
+   background: #DFFBFD url("../img/bg.png") repeat-x bottom;
+   /*#DFFBFD,#AAE9EC*/ }
+
+}
+
+@-ms-keyframes "sunshine" {
+	0%,30% {
+	background: #aeaa98 url("../img/bg.png") repeat-x bottom;
+}
+ 100% {
+   background: #DFFBFD url("../img/bg.png") repeat-x bottom;
+   /*#DFFBFD,#AAE9EC*/ }
+
+}
+
+@-o-keyframes "sunshine" {
+	0%,30% {
+	background: #aeaa98 url("../img/bg.png") repeat-x bottom;
+}
+ 100% {
+   background: #DFFBFD url("../img/bg.png") repeat-x bottom;
+   /*#DFFBFD,#AAE9EC*/ }
+
+}

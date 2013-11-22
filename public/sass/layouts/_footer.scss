@@ -1,0 +1,33 @@
+.footer
+{
+	position: relative;
+	text-align: center;
+}
+
+.footer nav ul
+{
+	display: inline-block;
+	
+	margin: 10px auto;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.footer nav ul li
+{
+	margin: 0px 20px;
+	float: left;
+}
+
+.footer nav ul li a:link,.footer ul li a:visited,.footer ul li a:hover,.footer ul li a:active
+{
+	color:#333333;
+	text-decoration: none;
+	font-family: helvetica,sans-serif;
+	font-size: 15px;
+}
+.footer nav ul li a:hover,.footer ul li a:active
+{
+	color:#000000;
+}

@@ -1,0 +1,75 @@
+@import "compass/css3/images";
+
+@import "header";
+@import "footer";
+@import "modal_map";
+
+html {
+	background-color: #eeeeee;
+	overflow-x: hidden;
+}
+
+.information_box {
+	background: #f4f4f4;
+
+	border: 1px solid #eee;
+	border-radius: 5px;
+
+	width: 400px;
+
+	margin: 0 auto;
+	padding: 10px;
+
+	color: #333;
+	line-height: 34px;
+	text-shadow: 0 1px white;
+
+    @media screen and (max-width: 480px) {
+        width: 280px;
+    }
+}
+
+.common
+{
+	position: relative;
+	min-height: 300px;
+
+	padding-top: 10px;
+
+	@include background(linear-gradient(top, #fff, #eee));
+
+	p
+	{
+		line-height: 24px;
+	}
+}
+
+.common #page-content {
+	margin: 0 auto;
+}
+
+.common h1
+{
+	margin-bottom: 5px;
+	padding: 0;
+	
+	font-size: 35px;
+	font-weight: normal;
+	color: #333333;
+	
+	text-shadow:0 1px 0 #ffffff;
+}
+
+.common article
+{
+	margin: 0 auto;
+	padding: 0;
+	
+	width: 284px;
+	
+	font-size: 13px;
+	line-height: 1;
+	
+	text-align: justify;
+	color: #999999;
+}

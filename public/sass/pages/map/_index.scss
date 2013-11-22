@@ -1,0 +1,184 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "compass/css3/text-shadow";
+
+
+#map-page {
+    position: relative;
+
+    .google-Map {
+        height: 450px;
+    }
+
+    .google-Search {
+        position: relative;
+
+        width: 400px;
+        height: 40px;
+
+        position: absolute;
+        top: 10px;
+        left: 50%;
+
+        margin-left: -200px;
+
+        z-index: 9999;
+
+        @media screen and (max-width: 470px) {
+            width: 300px;
+
+            margin-left: -150px;
+        }
+
+        .google-Search-input {
+            @include border-radius(5px);
+
+            background-color: rgba(255, 255, 255, 0.8); // Old browsers
+            //@include filter-gradient(#f7f7f7, #ffffff, vertical); // IE6-9
+            //@include background-image(linear-gradient(top,  #f7f7f7 10%,#ffffff 100%));
+
+
+            border: 1px solid #ccc;
+
+            @include box-sizing(border-box);
+
+            //@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.1), inset 0 2px 6px rgba(0, 0, 0, 0.1));
+
+            @include transition(all 0.3s);
+
+            width: 100%;
+            height: 40px;
+            line-height: 18px;
+
+            font-weight: 300;
+            font-size: 18px;
+
+            padding: 0 30px 0 10px;
+
+            &:focus {
+                background-color: rgba(255, 255, 255, 0.95);
+
+                outline: none;
+                //border: 1px solid #62AEED;
+            }
+
+            &::-webkit-input-placeholder {
+                color: #999;
+                line-height: 22px;
+            }
+
+            &:-moz-placeholder {
+                color: #999;
+                line-height: 22px;
+            }
+
+            &::-moz-placeholder {
+                color: #999;
+                line-height: 22px;
+            }
+
+            &:-ms-input-placeholder {
+                color: #999;
+                line-height: 22px;
+            }
+        }
+        
+        .google-Search-searchIcon {
+            position: absolute;
+            right: 10px;
+            top: 11px;
+
+            z-index: 99999;
+
+            color: #999;
+
+            @include text-shadow(0 1px 0 #fff);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .google-Search-suggestions {
+            @include border-radius(5px);
+
+            border: 1px solid #ccc;
+
+            @include box-sizing(border-box);
+            //@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.1), inset 0 2px 6px rgba(0, 0, 0, 0.05));
+
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            position: absolute;
+            top: 43px;
+
+            list-style: none;
+
+            display: none;
+
+            li {
+                background-color: rgba(255, 255, 255, 0.8);
+
+                @include box-sizing(border-box);
+
+                height: 60px;
+                padding: 0 20px;
+
+                cursor: pointer;
+
+                position: relative;
+
+                border-bottom: 1px solid #eee;
+
+                &.selected {
+                    background-color: rgba(255,255,255,0.95);
+
+                    //@include box-shadow(inset 0 0 13px rgba(0, 0, 0, 0.15));
+                }
+
+                &:first-child {
+                    @include border-top-left-radius(5px);
+                    @include border-top-right-radius(5px);
+                }
+
+                &:last-child {
+                    @include border-bottom-right-radius(5px);
+                    @include border-bottom-left-radius(5px);
+                }
+            }
+
+            .google-Search-suggestionText {
+                line-height: 44px;
+            }
+
+            .google-Search-suggestionType {
+                position: absolute;
+                bottom: 8px;
+                left: 20px;
+
+                font-size: 13px;
+            }
+
+            .google-Search-suggestionReports {
+                position: absolute;
+                right: 20px;
+                top: 11px;
+
+                &:after {
+                    font-family: FontAwesome;
+                    content: " \f12a";
+
+                    font-size: 14px;
+
+                    color: #F25C69;
+                }
+            }
+        }
+    }
+}
