@@ -31,7 +31,7 @@ class CreateProblemeUserTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('problemeUser');
 	}
 
 }

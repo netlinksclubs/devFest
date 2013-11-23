@@ -19,7 +19,7 @@
 			<span class="title">Email: </span><span class="linked_content">{{ $email }}</span>
 		</div>
 	</div>
-	{{ Form::open(array('action' => 'Register\FacebookController@getNew_account', 'method' => 'PUT', 'class' => 'form1')) }}
+	{{ Form::open(array('action' => 'Register\GoogleController@getNew_account', 'method' => 'PUT', 'class' => 'form1')) }}
 	{{ Form::password('password', array('placeholder' => 'Password')) }}
 	{{ Form::submit('Create Account', array('id' => 'create', 'class' => 'button2')) }}
 	{{ Form::close() }}

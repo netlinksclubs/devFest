@@ -156,6 +156,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
             $user->first_name = $user_informations['first_name'];
             $user->middle_name = isset($user_informations['middle_name']) ? $user_informations['middle_name'] : '';
             $user->last_name = $user_informations['last_name'];
+            $user->avatar = $user_informations['picture'];
 
             $user->bio = isset($user_informations['bio']) ? $user_informations['bio'] : '';
 

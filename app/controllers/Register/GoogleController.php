@@ -72,7 +72,7 @@ class GoogleController extends \BaseLayoutController
         }
 
         $user_information = $this->google->getUserInfo();
-
+        
         // Add user to database
         \User::addUserWithInfoAndProvider(array_merge($user_information, array('password' => \Input::get('password'))), 'google');
 

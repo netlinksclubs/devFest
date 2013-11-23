@@ -31,7 +31,7 @@ class CreateRequestTable extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::drop('request');
 	}
 
 }

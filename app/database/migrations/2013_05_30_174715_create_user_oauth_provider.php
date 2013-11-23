@@ -22,7 +22,7 @@ class CreateUserOauthProvider extends Migration {
 			$table->integer('user_id')->unsigned();
 			$table->integer('oauth_provider_id')->unsigned();
 
-			$table->integer('oauth_user_id')->unsigned();
+			$table->string('oauth_user_id', 255);
 
 			$table->foreign('user_id')->references('id')->on('user')->onUpdate('cascade')->onDelete('cascade');
 			$table->foreign('oauth_provider_id')->references('id')->on('oauth_provider')->onUpdate('cascade')->onDelete('cascade');

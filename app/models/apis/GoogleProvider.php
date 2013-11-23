@@ -47,7 +47,7 @@ class GoogleProvider {
 		$serviceFactory = new \OAuth\ServiceFactory();
 
 		// Get an instance of google service
-		$this->googleService = $serviceFactory->createService('Google', $credentials, $storage, array('scope' => \Config::get('oauthServices.google.scope')));
+		$this->googleService = $serviceFactory->createService('Google', $credentials, $storage, \Config::get('oauthServices.google.scope'));
 	}
 
 	/**
@@ -72,7 +72,16 @@ class GoogleProvider {
 		if($this->google_informations === null)
 			$this->google_informations = json_decode($this->googleService->request('https://www.googleapis.com/oauth2/v1/userinfo'), true);
 
-		return $this->google_informations;
+		$info = [
+			'id' => $this->google_informations['id'],
+			'first_name' => $this->google_informations['given_name'],
+			'last_name' => $this->google_informations['family_name'],
+			'gender' => $this->google_informations['gender'],
+			'picture' => $this->google_informations['picture'],
+			'email' => $this->google_informations['email']
+		];
+
+		return $info;
 	}
 
 	/**
