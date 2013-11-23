@@ -1,32 +1,28 @@
 
-var x,y,p;
+var x,y;
 
 function getLocation()
-  {
+{
   if (navigator.geolocation)
-    {
-    navigator.geolocation.getCurrentPosition(showPosition);
-    }
-  else{alert("Geolocation is not supported by this browser.");}
-  }
-function showPosition(position)
   {
-  p=position;
-  alert(position);
-  x	= position.coords.latitude ;
-  y = position.coords.longitude;
-  alert(x+" // " + y);	
+    navigator.geolocation.getCurrentPosition(function(position) {
+      x = position.coords.latitude;
+      y = position.coords.longitude;
+    }, function(e) {console.log(e);});
   }
+  else
+  {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
 
+getLocation();
 
 function needHelp(){
-	getLocation();
-	showPosition();
-	
 	$.ajax({
   		type: "POST",
-  		url: "/request/needhelp",
-  		data: { latitude: x, location: y }
+  		url: baseURL + "/request/needhelp",
+  		data: { latitude: x, longitude: y }
 	})
   	.done(function( msg ) {
     	alert( "Data Saved: " + msg );
