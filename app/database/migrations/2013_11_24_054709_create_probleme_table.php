@@ -17,9 +17,9 @@ class CreateProblemeTable extends Migration {
             $table->string("name", 32);
             $table->string("description", 320);
             $table->string("icon", 2);
-            $table->integer("catogrie_id")->unsigned();
+            $table->integer("category_id")->unsigned();
 
-            $table->foreign('catogrie_id')->references('id')->on('catogrie')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('category')->onUpdate('cascade')->onDelete('cascade');
 
             $table->timestamps();
 

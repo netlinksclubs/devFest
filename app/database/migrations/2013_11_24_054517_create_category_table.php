@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCatogrieTable extends Migration {
+class CreateCategoryTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,10 @@ class CreateCatogrieTable extends Migration {
 	public function up()
 	{
 		//
-		Schema::create("catogrie", function($table) {
+		Schema::create("category", function($table) {
             $table->increments("id");
             $table->string("name", 32);
-            $table->string("desc", 320);
+            $table->string("description", 320);
 
             $table->timestamps();
 
@@ -32,7 +32,7 @@ class CreateCatogrieTable extends Migration {
 	public function down()
 	{
 		//
-		Schema::drop('catogrie');
+		Schema::drop('category');
 	}
 
 }

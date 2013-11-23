@@ -21,24 +21,24 @@
     </div>
 
     <div class="userBox pull-left">
-        <img src="{{ URL::asset('img/about/must.jpg') }}" alt="Mustapha Ben Chaaben" class="roundedPic userPic">
+        <img src="{{ URL::asset('img/about/khalil.jpg') }}" alt="Khalil Fadhel" class="roundedPic userPic">
         <h2 class="userTitle">Khalil Fadhel</h2>
         <p class="userInfo">
             A pasionnate software engineering student.
         </p>
         <div class="userSocialInfo">
-            <a class="icon-facebook" href="https://www.facebook.com/mustapha.benchaaben" target="_blank"></a>
+            <a class="icon-facebook" href="http://facebook.com/Khalilfadhel/" target="_blank"></a>
         </div>
     </div>
 
     <div class="userBox pull-left">
-        <img src="{{ URL::asset('img/about/must.jpg') }}" alt="Mustapha Ben Chaaben" class="roundedPic userPic">
+        <img src="{{ URL::asset('img/about/mokhles.jpg') }}" alt="Mokhles El Heni" class="roundedPic userPic">
         <h2 class="userTitle">Mokhless El Heni</h2>
         <p class="userInfo">
             A pastionnate software engineering student.
         </p>
         <div class="userSocialInfo">
-            <a class="icon-facebook" href="https://www.facebook.com/mustapha.benchaaben" target="_blank"></a>
+            <a class="icon-facebook" href="https://www.facebook.com/ElheniMokhles" target="_blank"></a>
         </div>
     </div>
 </div>

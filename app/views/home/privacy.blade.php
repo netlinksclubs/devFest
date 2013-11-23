@@ -1,5 +1,5 @@
 <div class="common-container">
-    This Privacy Policy governs the manner in which Nature's protector collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="{{ URL::to('/') }}">{{ URL::to('/') }}</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by Nature's protector.<br><br>
+    This Privacy Policy governs the manner in which Guide me collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="{{ URL::to('/') }}">{{ URL::to('/') }}</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by Guide me.<br><br>
 
 <b>Personal identification information</b><br><br>
 
@@ -15,7 +15,7 @@ Our Site may use "cookies" to enhance User experience. User's web browser places
 
 <b>How we use collected information</b><br><br>
 
-Nature's protector may collect and use Users personal information for the following purposes:<br>
+Guide me may collect and use Users personal information for the following purposes:<br>
 <ul>
 <li><i>To personalize user experience</i><br>
     We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.</li>
@@ -38,7 +38,7 @@ Users may find advertising or other content on our Site that link to the sites a
 
 <b>Changes to this privacy policy</b><br><br>
 
-Nature's protector has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site and send you an email. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.<br><br>
+Guide me has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site and send you an email. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.<br><br>
 
 <b>Your acceptance of these terms</b><br><br>
 
@@ -47,7 +47,7 @@ By using this Site, you signify your acceptance of this policy. If you do not ag
 <b>Contacting us</b><br><br>
 
 If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:<br>
-<a href="{{ URL::to('/') }}">Nature's protector</a><br>
+<a href="{{ URL::to('/') }}">Guide me</a><br>
 <a href="{{ URL::to('/') }}">{{ URL::to('/') }}</a><br>
 naturesprotector.netlinks@gmail.com<br>
 <br>
