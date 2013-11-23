@@ -31,9 +31,9 @@ class RequestController extends BaseLayoutController {
 
         $request = new Request2();
         $request->done = 0;
-        $request->needHelp = 1;
-        $request->latitude = is_null($latitude) ? 36.843529 : $latitude;
-        $request->longitude = is_null($longitude) ? 10.197799 : $longitude;
+        $request->needHelp = $needhelp;
+        $request->latitude = is_null($latitude) ? 36.843529 + rand(0, 100) * 0.00001 : $latitude;
+        $request->longitude = is_null($longitude) ? 10.197799 + rand(0, 100) * 0.00001 : $longitude;
 
 		$user->requests()->save($request);
     }

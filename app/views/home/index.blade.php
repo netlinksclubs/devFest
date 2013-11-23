@@ -7,9 +7,10 @@
 		</div>
 
 		<div class="bottom-menu">
-			<div id="buttonGroup">
-				<button onclick="needHelp()" class="needs-help">Needs Help</button>
-				<button onclick="canHelp()" class="can-help">Can Help</button>
+			{{ ($count == '1') ? 'Someone is coming... Searching...' : '' }}
+			<div id="buttonGroup" class="{{ ($count == '1') ? 'hide' : '' }}">
+				<button onclick="needHelp()" class="needs-help">I Need Help</button>
+				<button onclick="canHelp()" class="can-help">I Can Help</button>
 			</div>
 		</div>
 

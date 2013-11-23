@@ -14,6 +14,15 @@ var GoogleMap = (function() {
             origin: new google.maps.Point(0,0),
             // The anchor for this image is the base of the flagpole at 0,32.
             anchor: new google.maps.Point(15, 15)
+        },
+        GOOGLE_MAPS_PIN_ICON2 = {
+            url: '../img/map/cercle2.png',
+            // This marker is 20 pixels wide by 32 pixels tall.
+            size: new google.maps.Size(30, 30),
+            // The origin for this image is 0,0.
+            origin: new google.maps.Point(0,0),
+            // The anchor for this image is the base of the flagpole at 0,32.
+            anchor: new google.maps.Point(15, 15)
         };
     // Google maps reference documentation: https://developers.google.com/maps/documentation/javascript/reference
 
@@ -66,11 +75,19 @@ var GoogleMap = (function() {
 
             return this;
         },
-        addMarker: function (location) {
+        addMarker: function (location, i) {
+            if(typeof i === undefined || i == 1) {
+                return new google.maps.Marker({
+                    position: location,
+                    map: this.getMap(),
+                    icon: GOOGLE_MAPS_PIN_ICON
+                });
+            }
+
             return new google.maps.Marker({
                 position: location,
                 map: this.getMap(),
-                icon: GOOGLE_MAPS_PIN_ICON
+                icon: GOOGLE_MAPS_PIN_ICON2
             });
         },
         addInfoWindow: function (contentString, maxWidth) {
@@ -141,7 +158,7 @@ var GoogleMap = (function() {
             var localThis = this;
             $.get(url).done(function(data) {
                 for(var i = 0; i < data.length; i++) {
-                    var marker = localThis.addMarker(new google.maps.LatLng(data[i].latitude, data[i].longitude));
+                    var marker = localThis.addMarker(new google.maps.LatLng(data[i].latitude, data[i].longitude), data[i].needHelp);
 
                     callback.call(marker, data[i]);
                 }

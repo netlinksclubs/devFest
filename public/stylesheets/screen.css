@@ -2591,7 +2591,7 @@ header nav ul {
   /* line 44, ../sass/layouts/_header.scss */
   header nav ul li {
     margin: 0 15px;
-    padding: 3px 10px 3px 10px;
+    padding: 10px 10px;
     border-radius: 3px;
     float: left;
     list-style: none;
@@ -2877,40 +2877,42 @@ body {
   margin: 0;
   padding: 15px 5px;
   z-index: 999999;
-  line-height: 50px; }
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px; }
 
-/* line 431, ../sass/layouts/_header.scss */
+/* line 434, ../sass/layouts/_header.scss */
 .bottom-menu button {
   width: 200px;
   margin: 0 3px; }
 
-/* line 437, ../sass/layouts/_header.scss */
+/* line 440, ../sass/layouts/_header.scss */
 .can-help {
   background-image: url(../img/canhelp.png);
   background-position: 0 0;
   background-repeat: no-repeat; }
 
-/* line 443, ../sass/layouts/_header.scss */
+/* line 446, ../sass/layouts/_header.scss */
 .can-help:hover {
   background-image: url(../img/canhelp2.png);
   color: #00d20a; }
 
-/* line 448, ../sass/layouts/_header.scss */
+/* line 451, ../sass/layouts/_header.scss */
 .needs-help {
   background-image: url(../img/needhelp.png);
   background-position: 0 0;
   background-repeat: no-repeat; }
 
-/* line 454, ../sass/layouts/_header.scss */
+/* line 457, ../sass/layouts/_header.scss */
 .needs-help:hover {
   background-image: url(../img/needhelp2.png);
   color: #ff6e6e; }
 
-/* line 459, ../sass/layouts/_header.scss */
+/* line 462, ../sass/layouts/_header.scss */
 .hide {
   display: none; }
 
-/* line 463, ../sass/layouts/_header.scss */
+/* line 466, ../sass/layouts/_header.scss */
 header {
   height: 70px;
   width: 100%;
@@ -2922,7 +2924,7 @@ header {
   z-index: 999999;
   background: rgba(255, 255, 255, 0.9); }
 
-/* line 477, ../sass/layouts/_header.scss */
+/* line 480, ../sass/layouts/_header.scss */
 .popup {
   height: 700px;
   width: 30%;
@@ -2938,14 +2940,14 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
-/* line 494, ../sass/layouts/_header.scss */
+/* line 497, ../sass/layouts/_header.scss */
 form {
   width: 30%;
   font-size: 20px;
   text-align: center;
   font-family: 'Pontano Sans', sans-serif; }
 
-/* line 501, ../sass/layouts/_header.scss */
+/* line 504, ../sass/layouts/_header.scss */
 button {
   border: none;
   background: #f4f4f4;
@@ -2959,7 +2961,7 @@ button {
   cursor: pointer;
   translition: ease background 1s; }
 
-/* line 518, ../sass/layouts/_header.scss */
+/* line 521, ../sass/layouts/_header.scss */
 .tel {
   font-size: 20px;
   width: 100%;
@@ -2972,25 +2974,25 @@ button {
   font-family: 'Pontano Sans', sans-serif;
   box-sizing: border-box; }
 
-/* line 531, ../sass/layouts/_header.scss */
+/* line 534, ../sass/layouts/_header.scss */
 .tel {
   background-image: url(images/tel.png);
   background-position: 7px  5px;
   background-repeat: no-repeat; }
 
-/* line 537, ../sass/layouts/_header.scss */
+/* line 540, ../sass/layouts/_header.scss */
 .tel:hover {
   background-image: url(images/tel2.png); }
 
-/* line 544, ../sass/layouts/_header.scss */
+/* line 547, ../sass/layouts/_header.scss */
 form section {
   width: 100%; }
 
-/* line 549, ../sass/layouts/_header.scss */
+/* line 552, ../sass/layouts/_header.scss */
 .probleme button {
   width: 30%; }
 
-/* line 553, ../sass/layouts/_header.scss */
+/* line 556, ../sass/layouts/_header.scss */
 .problemeList {
   width: 30%;
   margin: 5px 1.666%;
@@ -2999,15 +3001,15 @@ form section {
   float: left;
   visibility: hidden; }
 
-/* line 562, ../sass/layouts/_header.scss */
+/* line 565, ../sass/layouts/_header.scss */
 .problemeList input {
   margin: 18px; }
 
-/* line 567, ../sass/layouts/_header.scss */
+/* line 570, ../sass/layouts/_header.scss */
 .probleme .middle {
   margin: 0 5%; }
 
-/* line 571, ../sass/layouts/_header.scss */
+/* line 574, ../sass/layouts/_header.scss */
 .save {
   width: 100%;
   margin-top: 30px;
@@ -3015,12 +3017,12 @@ form section {
   background-position: 9px 7px;
   background-repeat: no-repeat; }
 
-/* line 579, ../sass/layouts/_header.scss */
+/* line 582, ../sass/layouts/_header.scss */
 .save:hover {
   background-image: url(images/save2.png);
   color: #32d600; }
 
-/* line 585, ../sass/layouts/_header.scss */
+/* line 588, ../sass/layouts/_header.scss */
 .textForm {
   margin-top: 60px;
   margin-bottom: 20px; }

@@ -10,7 +10,11 @@ class HomeController extends BaseLayoutController {
      **/
     public function getIndex()
     {
-        $this->layout->content = View::make('home.index');
+        $request = Request2::where('user_id', '=', Auth::user()->id)->where('done', '=', 0);
+        $data = [
+            'count' => $request->count()
+        ];
+        $this->layout->content = View::make('home.index', $data);
     }
 
     /**
