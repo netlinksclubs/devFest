@@ -18,6 +18,17 @@ class Request2 extends Eloquent{
      **/
     public function user()
     {
-        return $this->hasOne('User');
+        return $this->belongsTo('User');
+    }
+
+    /**
+     * Users who opted for this provder
+     *
+     * @return array
+     * @author Mustapha Ben Chaaben
+     **/
+    public function helper()
+    {
+        return $this->belongsTo('User', 'helper_id');
     }
 }

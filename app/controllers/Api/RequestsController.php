@@ -16,6 +16,6 @@ class RequestsController extends \BaseController
      * @author Mustapha Ben Chaaben
      **/
     public function getIndex() {
-        return \Request2::all();
+        return \Request2::where('done', '=', 0)->get();
     }
 } // END class ReportController

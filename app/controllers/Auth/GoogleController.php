@@ -52,7 +52,7 @@ class GoogleController extends \BaseController {
 
         // Send a request with it to get user informations
         $user_information = $this->google->getUserInfo();
-
+        
         // Some thing is wrong if the return isn't an array or an empty one
         if(!is_array($user_information) or empty($user_information)) {
             \Redirect::to('/');

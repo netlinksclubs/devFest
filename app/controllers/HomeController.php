@@ -10,11 +10,18 @@ class HomeController extends BaseLayoutController {
      **/
     public function getIndex()
     {
-        $request = Request2::where('user_id', '=', Auth::user()->id)->where('done', '=', 0);
+        if(Auth::guest()) {
+            return View::make('home.indexNonLoggedIn');
+
+            return ;
+        }
+
+        $request = Request2::where('user_id', '=', Auth::user()->id)->where('done', '=', 0)->orWhere('helper_id', '=', Auth::user()->id)->where('done', '=', 0)->get();
         $data = [
             'count' => $request->count()
         ];
-        $this->layout->content = View::make('home.index', $data);
+        
+        $this->layout->content = View::make('home.indexLoggedIn', $data);
     }
 
     /**

@@ -15,7 +15,8 @@ class CreateRequestTable extends Migration {
 		Schema::create('request', function($table)
 		{
 			$table->increments('id');
-			$table->integer('user_id')->unsigned();
+			$table->integer('user_id')->nullable()->unsigned();
+			$table->integer('helper_id')->nullable()->unsigned();
 			$table->tinyInteger('done');
 			$table->tinyInteger('needHelp');
 
@@ -23,6 +24,7 @@ class CreateRequestTable extends Migration {
 			$table->decimal('longitude', 18, 14);
 
 			$table->foreign('user_id')->references('id')->on('user')->onUpdate('cascade')->onDelete('cascade');
+			$table->foreign('helper_id')->references('id')->on('user')->onUpdate('cascade')->onDelete('cascade');
 
 			$table->timestamps();
 		});

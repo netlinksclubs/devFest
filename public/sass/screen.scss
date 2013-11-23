@@ -38,7 +38,7 @@
 
 body {
     color: #333;
-    font-family: "helvetica neue", "Century Gothic", sans-serif;
+    font-family: 'Pontano Sans', "helvetica neue", "Century Gothic", sans-serif;
 
     font-weight: 300;
 }
@@ -72,3 +72,10 @@ a:hover {
     color: #00D6FF;
 }
 
+.center-box {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+
+    z-index: 999999999;
+}

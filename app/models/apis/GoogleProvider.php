@@ -71,7 +71,7 @@ class GoogleProvider {
 	{
 		if($this->google_informations === null)
 			$this->google_informations = json_decode($this->googleService->request('https://www.googleapis.com/oauth2/v1/userinfo'), true);
-
+		
 		$info = [
 			'id' => $this->google_informations['id'],
 			'first_name' => $this->google_informations['given_name'],

@@ -30,7 +30,7 @@
 			<div id="container" class="common-container">
 				<div id="logo">
 					<a href="{{ URL::to('/') }}">
-						<img src="{{ URL::asset('img/logo.png') }}">
+						<img width="90px" src="{{ URL::asset('img/logo.png') }}">
 					</a>
 				</div>
 				<nav>

@@ -6,6 +6,15 @@
 			</div>
 		</div>
 
+		<div id="userMeetBox" class="hide userBox center-box">
+			<span id="closeBox" class="close">x</span>
+	        <img src="" alt="" class="roundedPic userPic">
+	        <h2 class="userTitle"></h2>
+	        <div class="userSocialInfo">
+	            <a class="icon-google-plus" href="" target="_blank">&nbsp;&nbsp;Visit his google plus profile</a>
+	        </div>
+    	</div>
+
 		<div class="bottom-menu">
 			{{ ($count == '1') ? 'Someone is coming... Searching...' : '' }}
 			<div id="buttonGroup" class="{{ ($count == '1') ? 'hide' : '' }}">
