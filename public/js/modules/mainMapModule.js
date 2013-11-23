@@ -31,7 +31,6 @@ var MainMapModule = (function() {
         geocoder.geocode(geocoderRequest, function(geocoderResult, geocoderStatus) {
             // If this fails...
             if(geocoderStatus !== 'OK') {
-                console.log(geocoderStatus);
                 // TODO: Report the error
                 return;
             }

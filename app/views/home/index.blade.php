@@ -7,8 +7,10 @@
 		</div>
 
 		<div class="bottom-menu">
-			<button onclick="needHelp()" class="needs-help">Needs Help</button>
-			<button onclick="canHelp()" class="can-help">Can Help</button>
+			<div id="buttonGroup">
+				<button onclick="needHelp()" class="needs-help">Needs Help</button>
+				<button onclick="canHelp()" class="can-help">Can Help</button>
+			</div>
 		</div>
 
 		{{ HTML::script('js/scriptForMap.js')}}

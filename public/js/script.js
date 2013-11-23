@@ -40,4 +40,11 @@ $(document).ready(function() {
     if($shareFacebook.length > 0) {
         facebookShareModule.init($reportPage, $shareFacebook);
     }
+
+    var $buttonGroup = $('#buttonGroup');
+    $buttonGroup.children().click(function() {
+        $buttonGroup.addClass('hide')
+            .parent()
+            .text("Someone is coming... Searching...");
+    });
 });
