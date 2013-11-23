@@ -25,6 +25,17 @@ function needHelp(){
   		data: { latitude: x, longitude: y }
 	})
   	.done(function( msg ) {
-    	alert( "Data Saved: " + msg );
+    	console.log( "Data Saved: " + msg );
   	});
+}
+
+function canHelp(){
+  $.ajax({
+      type: "POST",
+      url: baseURL + "/request/wanttohelp",
+      data: { latitude: x, longitude: y }
+  })
+    .done(function( msg ) {
+      console.log( "Data Saved: " + msg );
+    });
 }

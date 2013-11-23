@@ -57,13 +57,13 @@
 */
 #maps-modal-box
 {
-	background: rgba(0,0,0,0.9) url('../img/ajax-loader.gif') no-repeat center;
+	background: white url('../img/ajax-loader.gif') no-repeat center;
 	position: fixed;
 	bottom: 0px;
 	right: 0px;
 	
 	width: 100%;
-	height: 0%;
+	height: 100%;
 
 	z-index: 99999;
 	
@@ -83,20 +83,4 @@
 
 .loaded #maps-modal-box {
 	background-image: none;
-}
-
-/*
-* Style the map canvas
-*/
-#map_canvas
-{
-	clear: both;
-	margin: 10% auto;
-	height: 400px;
-
-	@media screen and (max-height: 480px) {
-        height: 90%;
-
-        margin: 5% auto;
-    }
 }

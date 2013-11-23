@@ -35,8 +35,10 @@
 				</div>
 				<nav>
 					<ul>
-						<li><a href="{{ URL::to('/') }}">Home</a></li>
-						<li><a href="{{ URL::action('MapController@getIndex' )}}">Map</a></li>
+						<li><a href="{{ URL::action('HomeController@getAbout') }}">About</a></li>
+						<li><a href="{{ URL::action('HomeController@getContact'); }}">Contact</a></li>
+						<li><a href="{{ URL::action('HomeController@getPrivacy'); }}">Privacy</a></li>
+						<li><a href="{{ URL::action('HomeController@getTos'); }}">Terms of service</a></li>
 						@if(Auth::check())
 							<li><a href="{{ URL::action('AuthController@getLogout'); }}">Logout</a></li>
 						@endif
@@ -52,24 +54,6 @@
 				{{ $content }}
 			</div>
 		</section>
-		<footer class="footer common-container">
-			<nav>
-				<ul>
-					<li><a href="{{ URL::action('HomeController@getAbout') }}">About</a></li>
-					<li><a href="{{ URL::action('HomeController@getContact'); }}">Contact</a></li>
-					<li><a href="{{ URL::action('HomeController@getPrivacy'); }}">Privacy</a></li>
-					<li><a href="{{ URL::action('HomeController@getTos'); }}">Terms of service</a></li>
-				</ul>
-			</nav>
-			<div>
-			<div id="maps-modal-container">
-				<div id="maps-modal-box">
-					<!--<div id="center"></div>-->
-					<div id="map_canvas" class="common-container"></div>
-				</div>
-				<div id="maps-modal-reveal"></div>
-			</div>
-		</footer>
 
 		<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 

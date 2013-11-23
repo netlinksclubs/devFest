@@ -2592,24 +2592,26 @@ header nav ul {
   header nav ul li {
     margin: 0 15px;
     padding: 3px 10px 2px 10px;
+    border-radius: 3px;
     float: left;
     list-style: none;
-    -webkit-transform: skew(-10deg, 0);
-    -moz-transform: skew(-10deg, 0);
-    -webkit-transition: background 0.8s ease-out 0s; }
-    /* line 57, ../sass/layouts/_header.scss */
+    -webkit-transition: background 0.8s ease-out 0s, color 0.8s ease-out 0s; }
+    /* line 56, ../sass/layouts/_header.scss */
     header nav ul li:last-child {
       margin: 0 0 0 15px; }
-    /* line 61, ../sass/layouts/_header.scss */
+    /* line 60, ../sass/layouts/_header.scss */
     header nav ul li:hover {
-      background: #BECC17;
-      border-bottom: 3px solid #99A50D; }
-    /* line 67, ../sass/layouts/_header.scss */
+      background: #0495EC;
+      border-bottom: 3px solid #0495EC; }
+      /* line 64, ../sass/layouts/_header.scss */
+      header nav ul li:hover a:link, header nav ul li:hover a:visited, header nav ul li:hover a:hover, header nav ul li:hover a:active {
+        color: white; }
+    /* line 71, ../sass/layouts/_header.scss */
     header nav ul li a:link, header nav ul li a:visited, header nav ul li a:hover, header nav ul li a:active {
       color: #000000;
       text-decoration: none; }
 
-/* line 76, ../sass/layouts/_header.scss */
+/* line 80, ../sass/layouts/_header.scss */
 #slogan {
   position: relative;
   clear: both;
@@ -2622,7 +2624,7 @@ header nav ul {
   opacity: 1;
   -webkit-animation: show 9s ease-out 0s; }
 
-/* line 93, ../sass/layouts/_header.scss */
+/* line 97, ../sass/layouts/_header.scss */
 #arc {
   position: relative;
   top: 85px;
@@ -2635,7 +2637,7 @@ header nav ul {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%; }
 
-/* line 111, ../sass/layouts/_header.scss */
+/* line 115, ../sass/layouts/_header.scss */
 .tree {
   position: absolute;
   left: 15%;
@@ -2645,7 +2647,7 @@ header nav ul {
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg); }
 
-/* line 124, ../sass/layouts/_header.scss */
+/* line 128, ../sass/layouts/_header.scss */
 .top {
   height: 90px;
   width: 90px;
@@ -2656,7 +2658,7 @@ header nav ul {
   -moz-transform: scale(0.7, 1);
   box-shadow: -3px 1px 0px 1px #64894d; }
 
-/* line 140, ../sass/layouts/_header.scss */
+/* line 144, ../sass/layouts/_header.scss */
 .bottom, .stem1, .stem2, .stem3 {
   position: absolute;
   height: 70px;
@@ -2667,12 +2669,12 @@ header nav ul {
   -moz-transform: perspective(100px) rotateX(35deg);
   box-shadow: -2px 1px 0px 1px #5d4628; }
 
-/* line 156, ../sass/layouts/_header.scss */
+/* line 160, ../sass/layouts/_header.scss */
 .bottom {
   top: 60px;
   left: 43px; }
 
-/* line 162, ../sass/layouts/_header.scss */
+/* line 166, ../sass/layouts/_header.scss */
 .stem1 {
   bottom: 40px;
   right: 25%;
@@ -2681,7 +2683,7 @@ header nav ul {
   -webkit-transform: rotate(6deg);
   -moz-transform: rotate(6deg); }
 
-/* line 174, ../sass/layouts/_header.scss */
+/* line 178, ../sass/layouts/_header.scss */
 .stem2 {
   bottom: 40px;
   right: 27%;
@@ -2690,7 +2692,7 @@ header nav ul {
   -webkit-transform: rotate(4deg);
   -moz-transform: rotate(4deg); }
 
-/* line 186, ../sass/layouts/_header.scss */
+/* line 190, ../sass/layouts/_header.scss */
 .stem3 {
   bottom: 30px;
   right: 13%;
@@ -2699,7 +2701,7 @@ header nav ul {
   -webkit-transform: rotate(4deg);
   -moz-transform: rotate(4deg); }
 
-/* line 199, ../sass/layouts/_header.scss */
+/* line 203, ../sass/layouts/_header.scss */
 .middle1 {
   position: absolute;
   top: 49px;
@@ -2712,7 +2714,7 @@ header nav ul {
   -moz-transform: rotateZ(-41deg);
   box-shadow: -2px 1px 0px 1px #5d4628; }
 
-/* line 215, ../sass/layouts/_header.scss */
+/* line 219, ../sass/layouts/_header.scss */
 .middle2 {
   position: absolute;
   top: 59px;
@@ -2725,7 +2727,7 @@ header nav ul {
   -moz-transform: rotateZ(49deg);
   box-shadow: 2px 1px 0px 0px #5d4628; }
 
-/* line 231, ../sass/layouts/_header.scss */
+/* line 235, ../sass/layouts/_header.scss */
 .dot1, .dot2 {
   position: absolute;
   width: 4px;
@@ -2733,17 +2735,17 @@ header nav ul {
   border-radius: 50%;
   background-color: #c5c742; }
 
-/* line 241, ../sass/layouts/_header.scss */
+/* line 245, ../sass/layouts/_header.scss */
 .dot1 {
   top: 40px;
   left: 50px; }
 
-/* line 247, ../sass/layouts/_header.scss */
+/* line 251, ../sass/layouts/_header.scss */
 .dot2 {
   top: 55px;
   left: 68px; }
 
-/* line 253, ../sass/layouts/_header.scss */
+/* line 257, ../sass/layouts/_header.scss */
 .tree2 {
   position: absolute;
   left: 8%;
@@ -2753,12 +2755,12 @@ header nav ul {
   -webkit-transform: rotate(1deg) scale(0.8, 0.8);
   -moz-transform: rotate(1deg) scale(0.8, 0.8); }
 
-/* line 266, ../sass/layouts/_header.scss */
+/* line 270, ../sass/layouts/_header.scss */
 .tree2 .top {
   background-color: #c5c742;
   box-shadow: -3px 1px 0px 1px #80903d; }
 
-/* line 273, ../sass/layouts/_header.scss */
+/* line 277, ../sass/layouts/_header.scss */
 .tree3 {
   position: absolute;
   right: 10%;
@@ -2768,11 +2770,11 @@ header nav ul {
   -webkit-transform: rotate(-4deg) scale(0.8, 0.8);
   -moz-transform: rotate(-4deg) scale(0.8, 0.8); }
 
-/* line 286, ../sass/layouts/_header.scss */
+/* line 290, ../sass/layouts/_header.scss */
 .tree2 .dot1, .tree2 .dot2, .tree4 .dot1, .tree4 .dot2 {
   background-color: #688b4f; }
 
-/* line 292, ../sass/layouts/_header.scss */
+/* line 296, ../sass/layouts/_header.scss */
 .tree4 {
   position: absolute;
   right: 15%;
@@ -2782,29 +2784,29 @@ header nav ul {
   -webkit-transform: rotate(81deg);
   -moz-transform: rotate(81deg); }
 
-/* line 306, ../sass/layouts/_header.scss */
+/* line 310, ../sass/layouts/_header.scss */
 .tree4 .top {
   background-color: #656432;
   box-shadow: -3px 1px 0px 1px #44431a; }
 
-/* line 313, ../sass/layouts/_header.scss */
+/* line 317, ../sass/layouts/_header.scss */
 .flower, .flower2 {
   position: absolute;
   width: 15px;
   height: 26px;
   background: url("../img/flower.png"); }
 
-/* line 321, ../sass/layouts/_header.scss */
+/* line 325, ../sass/layouts/_header.scss */
 .flower {
   bottom: 45px;
   left: 30%; }
 
-/* line 326, ../sass/layouts/_header.scss */
+/* line 330, ../sass/layouts/_header.scss */
 .flower2 {
   bottom: 40px;
   right: 25%; }
 
-/* line 332, ../sass/layouts/_header.scss */
+/* line 336, ../sass/layouts/_header.scss */
 .herb {
   position: absolute;
   width: 15px;
@@ -2813,7 +2815,7 @@ header nav ul {
   left: 25%;
   background: url("../img/herb.png") no-repeat; }
 
-/* line 346, ../sass/layouts/_header.scss */
+/* line 350, ../sass/layouts/_header.scss */
 .factorycontainer1, .factorycontainer2 {
   position: absolute;
   width: 40px;
@@ -2822,7 +2824,7 @@ header nav ul {
   animation: smokemove 3s linear 0s 1;
   -webkit-animation: smokemove 3s linear 0s 1; }
 
-/* line 359, ../sass/layouts/_header.scss */
+/* line 363, ../sass/layouts/_header.scss */
 .factory1, .factory2 {
   position: absolute;
   bottom: 0px;
@@ -2835,22 +2837,22 @@ header nav ul {
   -webkit-transform: perspective(100) rotateX(7deg);
   -moz-transform: perspective(100) rotateX(7deg); }
 
-/* line 377, ../sass/layouts/_header.scss */
+/* line 381, ../sass/layouts/_header.scss */
 .factorycontainer1 {
   left: 11%;
   bottom: 30px; }
 
-/* line 383, ../sass/layouts/_header.scss */
+/* line 387, ../sass/layouts/_header.scss */
 .factorycontainer2 {
   left: 15%;
   bottom: 20px; }
 
-/* line 389, ../sass/layouts/_header.scss */
+/* line 393, ../sass/layouts/_header.scss */
 .factory2 {
   -webkit-transform: scale(0.75, 0.75); }
 
 /* Map page */
-/* line 396, ../sass/layouts/_header.scss */
+/* line 400, ../sass/layouts/_header.scss */
 body {
   padding: 0;
   margin: 0;
@@ -2858,15 +2860,14 @@ body {
   height: 100%;
   position: absolute; }
 
-/* line 404, ../sass/layouts/_header.scss */
+/* line 408, ../sass/layouts/_header.scss */
 .map-container {
   width: 100%;
   height: 100%;
-  background: black;
   position: relative;
   z-index: 1; }
 
-/* line 412, ../sass/layouts/_header.scss */
+/* line 415, ../sass/layouts/_header.scss */
 .bottom-menu {
   background-color: rgba(255, 255, 255, 0.5);
   height: 50px;
@@ -2878,24 +2879,34 @@ body {
   padding: 15px 5px;
   z-index: 999999; }
 
-/* line 426, ../sass/layouts/_header.scss */
+/* line 429, ../sass/layouts/_header.scss */
 .bottom-menu button {
   width: 200px;
   margin: 0 3px; }
 
-/* line 431, ../sass/layouts/_header.scss */
+/* line 435, ../sass/layouts/_header.scss */
 .can-help {
-  background-image: url(images/canhelp.png);
+  background-image: url(../img/canhelp.png);
   background-position: 0 0;
   background-repeat: no-repeat; }
 
-/* line 437, ../sass/layouts/_header.scss */
+/* line 441, ../sass/layouts/_header.scss */
+.can-help:hover {
+  background-image: url(../img/canhelp2.png);
+  color: #00d20a; }
+
+/* line 446, ../sass/layouts/_header.scss */
 .needs-help {
-  background-image: url(images/needhelp.png);
+  background-image: url(../img/needhelp.png);
   background-position: 0 0;
   background-repeat: no-repeat; }
 
-/* line 443, ../sass/layouts/_header.scss */
+/* line 452, ../sass/layouts/_header.scss */
+.needs-help:hover {
+  background-image: url(../img/needhelp2.png);
+  color: #ff6e6e; }
+
+/* line 457, ../sass/layouts/_header.scss */
 header {
   height: 70px;
   width: 100%;
@@ -2907,7 +2918,7 @@ header {
   z-index: 999999;
   background: rgba(255, 255, 255, 0.9); }
 
-/* line 457, ../sass/layouts/_header.scss */
+/* line 471, ../sass/layouts/_header.scss */
 .popup {
   height: 700px;
   width: 30%;
@@ -2923,14 +2934,14 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
-/* line 474, ../sass/layouts/_header.scss */
+/* line 488, ../sass/layouts/_header.scss */
 form {
   width: 30%;
   font-size: 20px;
   text-align: center;
   font-family: 'Pontano Sans', sans-serif; }
 
-/* line 481, ../sass/layouts/_header.scss */
+/* line 495, ../sass/layouts/_header.scss */
 button {
   border: none;
   background: #f4f4f4;
@@ -2944,7 +2955,7 @@ button {
   cursor: pointer;
   translition: ease background 1s; }
 
-/* line 498, ../sass/layouts/_header.scss */
+/* line 512, ../sass/layouts/_header.scss */
 .tel {
   font-size: 20px;
   width: 100%;
@@ -2957,25 +2968,25 @@ button {
   font-family: 'Pontano Sans', sans-serif;
   box-sizing: border-box; }
 
-/* line 511, ../sass/layouts/_header.scss */
+/* line 525, ../sass/layouts/_header.scss */
 .tel {
   background-image: url(images/tel.png);
   background-position: 7px  5px;
   background-repeat: no-repeat; }
 
-/* line 517, ../sass/layouts/_header.scss */
+/* line 531, ../sass/layouts/_header.scss */
 .tel:hover {
   background-image: url(images/tel2.png); }
 
-/* line 524, ../sass/layouts/_header.scss */
+/* line 538, ../sass/layouts/_header.scss */
 form section {
   width: 100%; }
 
-/* line 529, ../sass/layouts/_header.scss */
+/* line 543, ../sass/layouts/_header.scss */
 .probleme button {
   width: 30%; }
 
-/* line 533, ../sass/layouts/_header.scss */
+/* line 547, ../sass/layouts/_header.scss */
 .problemeList {
   width: 30%;
   margin: 5px 1.666%;
@@ -2984,15 +2995,15 @@ form section {
   float: left;
   visibility: hidden; }
 
-/* line 542, ../sass/layouts/_header.scss */
+/* line 556, ../sass/layouts/_header.scss */
 .problemeList input {
   margin: 18px; }
 
-/* line 547, ../sass/layouts/_header.scss */
+/* line 561, ../sass/layouts/_header.scss */
 .probleme .middle {
   margin: 0 5%; }
 
-/* line 551, ../sass/layouts/_header.scss */
+/* line 565, ../sass/layouts/_header.scss */
 .save {
   width: 100%;
   margin-top: 30px;
@@ -3000,12 +3011,12 @@ form section {
   background-position: 9px 7px;
   background-repeat: no-repeat; }
 
-/* line 559, ../sass/layouts/_header.scss */
+/* line 573, ../sass/layouts/_header.scss */
 .save:hover {
   background-image: url(images/save2.png);
   color: #32d600; }
 
-/* line 565, ../sass/layouts/_header.scss */
+/* line 579, ../sass/layouts/_header.scss */
 .textForm {
   margin-top: 60px;
   margin-bottom: 20px; }
@@ -3082,12 +3093,12 @@ form section {
 */
 /* line 59, ../sass/layouts/_modal_map.scss */
 #maps-modal-box {
-  background: rgba(0, 0, 0, 0.9) url("../img/ajax-loader.gif") no-repeat center;
+  background: white url("../img/ajax-loader.gif") no-repeat center;
   position: fixed;
   bottom: 0px;
   right: 0px;
   width: 100%;
-  height: 0%;
+  height: 100%;
   z-index: 99999;
   -webkit-transition: 0.3s ease-out;
   -moz-transition: 0.3s ease-out;
@@ -3111,20 +3122,6 @@ form section {
 /* line 84, ../sass/layouts/_modal_map.scss */
 .loaded #maps-modal-box {
   background-image: none; }
-
-/*
-* Style the map canvas
-*/
-/* line 92, ../sass/layouts/_modal_map.scss */
-#map_canvas {
-  clear: both;
-  margin: 10% auto;
-  height: 400px; }
-  @media screen and (max-height: 480px) {
-    /* line 92, ../sass/layouts/_modal_map.scss */
-    #map_canvas {
-      height: 90%;
-      margin: 5% auto; } }
 
 /* line 7, ../sass/layouts/_common.scss */
 html {
@@ -3151,7 +3148,7 @@ html {
 .common {
   position: relative;
   min-height: 300px;
-  padding-top: 10px;
+  padding-top: 70px;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
   background: -webkit-linear-gradient(top, #ffffff, #eeeeee);
   background: -moz-linear-gradient(top, #ffffff, #eeeeee);
@@ -4268,6 +4265,7 @@ body {
   width: 90%;
   max-width: 960px;
   min-width: 289px;
+  padding-top: 10px;
   margin: 0 auto; }
 
 /* line 65, ../sass/screen.scss */

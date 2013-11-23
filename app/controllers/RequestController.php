@@ -9,7 +9,8 @@ class RequestController extends BaseLayoutController {
      **/
     public function postNeedhelp()
     {
-     	$this->createRequest(1, Input::get('latitude'), Input::get('longitude'));   
+     	$this->createRequest(1, Input::get('latitude'), Input::get('longitude'));
+        return json_encode([]);
     }
 
     /**
@@ -18,9 +19,11 @@ class RequestController extends BaseLayoutController {
      * @return Response
      * @author Mustapha Ben Chaaben
      **/
-    public function getWanttohelp()
+    public function postWanttohelp()
     {
         $this->createRequest(0, Input::get('latitude'), Input::get('longitude'));
+
+        return json_encode([]);
     }
 
     private function createRequest($needhelp, $latitude , $longitude) {

@@ -19,6 +19,10 @@ Route::group(array('prefix' => 'auth'), function() {
     Route::controller('google', 'Auth\\GoogleController');
 });
 
+Route::group(array('prefix' => 'api', 'before' => 'ajaxOr404'), function() {
+    Route::controller('requests', 'Api\\RequestsController');  
+});
+
 Route::controller('request', 'RequestController');
 
 Route::controller('auth', 'AuthController');

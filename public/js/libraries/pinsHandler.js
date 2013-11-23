@@ -27,7 +27,7 @@ var pinsHandler = (function() {
 
     function createMarkerHandler($infoWindowContent, infoWindow, data, marker) {
         return function() {
-            if(! windowIsOpen)
+            /*if(! windowIsOpen)
             {
                 currentMarker = marker;
 
@@ -50,7 +50,7 @@ var pinsHandler = (function() {
                 windowIsOpen = true;
             } else if(currentMarker === marker) {
                 closeInfoWindow(infoWindow);
-            }
+            }*/
         };
     }
 
@@ -65,7 +65,7 @@ var pinsHandler = (function() {
                 closeInfoWindow(infoWindow);
             });
 
-            googleMap.loadPins(baseURL + '/api/report', function(data) {
+            googleMap.loadPins(baseURL + '/api/requests', function(data) {
                 google.maps.event.addListener(this, 'click', createMarkerHandler($infoWindowContent, infoWindow, data, this));
             });
         }

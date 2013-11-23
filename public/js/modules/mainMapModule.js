@@ -47,7 +47,7 @@ var MainMapModule = (function() {
     return {
         init: function() {
             // Hide the alternative map
-            $('#maps-modal-reveal').hide();
+            //$('#maps-modal-reveal').hide();
 
             // Initialise google map
             googleMap.createMap($googleMapCanvas[0]);

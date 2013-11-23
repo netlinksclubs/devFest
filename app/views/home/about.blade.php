@@ -28,6 +28,13 @@
         </p>
         <div class="userSocialInfo">
             <a class="icon-facebook" href="http://facebook.com/Khalilfadhel/" target="_blank"></a>
+            <a class="icon-twitter" href="https://twitter.com/must3892" target="_blank"></a>
+            <a class="icon-github" href="http://github.com/must" target="_blank"></a>
+            <a class="icon-linkedin" href="http://www.linkedin.com/in/must3892" target="_blank"></a>
+            <a class="icon-youtube" href="http://www.youtube.com/user/elir1234" target="_blank"></a>
+            <a class="icon-instagram" href="http://instagram.com/must3892" target="_blank"></a>
+            <a class="icon-google-plus" href="https://plus.google.com/116844436622837367109/about" target="_blank"></a>
+            <a class="icon-foursquare" href="https://foursquare.com/must3892" target="_blank"></a>
         </div>
     </div>
 
@@ -39,6 +46,13 @@
         </p>
         <div class="userSocialInfo">
             <a class="icon-facebook" href="https://www.facebook.com/ElheniMokhles" target="_blank"></a>
+            <a class="icon-twitter" href="https://twitter.com/must3892" target="_blank"></a>
+            <a class="icon-github" href="http://github.com/must" target="_blank"></a>
+            <a class="icon-linkedin" href="http://www.linkedin.com/in/must3892" target="_blank"></a>
+            <a class="icon-youtube" href="http://www.youtube.com/user/elir1234" target="_blank"></a>
+            <a class="icon-instagram" href="http://instagram.com/must3892" target="_blank"></a>
+            <a class="icon-google-plus" href="https://plus.google.com/116844436622837367109/about" target="_blank"></a>
+            <a class="icon-foursquare" href="https://foursquare.com/must3892" target="_blank"></a>
         </div>
     </div>
 </div>
