@@ -44,6 +44,36 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
+Route::filter('authOr404', function()
+{
+	if (Auth::guest()) App::abort(404, 'Page not found');
+});
+
+Route::filter('authOrHome', function()
+{
+	if (Auth::guest()) return Redirect::to('');
+});
+
+Route::filter('authOrLogin', function()
+{
+	if (Auth::guest()) return Redirect::to('auth/login');
+});
+
+Route::filter('noAuthOr404', function()
+{
+	if (Auth::check()) App::abort(404, 'Page not found');
+});
+
+Route::filter('noGoogleAuthOr404', function()
+{
+	if(Auth::check() && Auth::user()->hasOauthProvider('google')) App::abort(404, 'Page not found');
+});
+
+Route::filter('ajaxOr404', function()
+{
+	if (! Request::ajax()) App::abort(404, 'Page not found');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Guest Filter

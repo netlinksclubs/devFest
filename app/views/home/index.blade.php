@@ -11,8 +11,7 @@
 
 	<ul id="reportbutton">
 		@if(Auth::guest())
-			<li><a href="{{ URL::to('auth/facebook'); }}">Facebook</a></li>
-			<li><a href="URL::action('auth.twitter');">Twitter</a></li>
+			<li><a href="{{ URL::to('auth/google'); }}">Google plus</a></li>
 		@else
 			<li><a href="{{ URL::route('report.create'); }}">Report a place</a></li>
 		@endif

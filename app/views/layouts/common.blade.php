@@ -31,7 +31,7 @@
 				<div id="logo">
 					<a href="{{ URL::to('/') }}">
 						<img src="{{ URL::asset('img/logo.png') }}" height="40px" width="40px">
-						<span id="name">Nature's Protector</span>
+						<span id="name">Guide me</span>
 					</a>
 				</div>
 				<nav>
