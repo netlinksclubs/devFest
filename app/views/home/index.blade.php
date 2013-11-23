@@ -4,8 +4,10 @@
 		</div>
 
 		<div class="bottom-menu">
-			<button class="needs-help">Needs Help</button>
+			<button onclick="needHelp()" class="needs-help">Needs Help</button>
 			<button class="can-help">Can Help</button>
 		</div>
+
+		{{ HTML::script('js/scriptForMap.js')}}
 
 
