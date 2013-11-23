@@ -15,7 +15,7 @@ class CatogrieTableSeeder extends Seeder {
 
     public function run()
     {
-        Catogrie::create(['name' => 'addiction','descreption'=> 'test test test']);
+        Category::create(['name' => 'addiction','descreption'=> 'test test test']);
     }
 
 }

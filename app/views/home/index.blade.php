@@ -13,7 +13,8 @@
 		@if(Auth::guest())
 			<li><a href="{{ URL::to('auth/google'); }}">Google plus</a></li>
 		@else
-			<li><a href="{{ URL::to('auth/google'); }}">Report a place</a></li>
+			<li><a href="{{ URL::to('request/needhelp'); }}">I need some help</a></li>
+			<li><a href="{{ URL::to('request/wanttohelp'); }}">I want to help</a></li>
 		@endif
 	</ul>
 </div>

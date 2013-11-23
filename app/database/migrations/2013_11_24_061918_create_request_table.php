@@ -12,15 +12,19 @@ class CreateRequestTable extends Migration {
 	public function up()
 	{
 		//
-		Schema::create('request', function($t)
+		Schema::create('request', function($table)
 		{
-			$t->increments('id');
-			$t->integer('user_id')->unsigned();
-			$t->tinyInteger('done');
-			$t->tinyInteger('needHelp');
+			$table->increments('id');
+			$table->integer('user_id')->unsigned();
+			$table->tinyInteger('done');
+			$table->tinyInteger('needHelp');
 
-			$t->foreign('user_id')->references('id')->on('user')->onUpdate('cascade')->onDelete('cascade');
+			$table->decimal('latitude', 18, 14);
+			$table->decimal('longitude', 18, 14);
 
+			$table->foreign('user_id')->references('id')->on('user')->onUpdate('cascade')->onDelete('cascade');
+
+			$table->timestamps();
 		});
 	}
 

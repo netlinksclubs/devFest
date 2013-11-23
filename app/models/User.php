@@ -69,7 +69,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
     public function requests()
     {
-        return $this->hasMany('Request');
+        return $this->hasMany('Request2');
     }
     public function problemeUser()
     {

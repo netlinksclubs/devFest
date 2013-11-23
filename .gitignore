@@ -3,5 +3,5 @@ composer.lock
 .DS_Store
 Thumbs.db
 app/config/local
-vendor
+vendor/*
 .*

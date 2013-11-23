@@ -19,6 +19,8 @@ Route::group(array('prefix' => 'auth'), function() {
     Route::controller('google', 'Auth\\GoogleController');
 });
 
+Route::controller('request', 'RequestController');
+
 Route::controller('auth', 'AuthController');
 
 Route::controller('map', 'MapController');
@@ -27,9 +29,4 @@ Route::controller('/', 'HomeController');
 App::singleton('google', function()
 {
     return new apis\GoogleProvider();
-});
-
-Route::get('/match',function(){
-	$req = Request2::where('needHelp', '=', 0)->firstOrFail();
-	return $req->user_id;
 });
