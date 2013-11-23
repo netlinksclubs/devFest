@@ -22,4 +22,9 @@ class Probleme extends Eloquent implements UserInterface, RemindableInterface {
     {
         return $this->belongsTo('Catogrie');
     }
+    public function problemeUser()
+    {
+        return $this->hasMany('problemeUser');
+    }
+
 }

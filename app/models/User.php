@@ -67,6 +67,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
                     ->withTimestamps();
     }
 
+    public function requests()
+    {
+        return $this->hasMany('Request');
+    }
+    public function problemeUser()
+    {
+        return $this->hasMany('problemeUser');
+    }
+
     /**
      * Returns an array with names of the providers that provide authentification for this user
      *
