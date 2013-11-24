@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
+    'BaseLayoutController' => $baseDir . '/app/controllers/BaseLayoutController.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'ClassPreloader\\Application' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Application.php',
     'ClassPreloader\\ClassList' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/ClassList.php',
@@ -18,8 +19,10 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+    'CreateCatogrieTable' => $baseDir . '/app/database/migrations/2013_11_24_054517_create_catogrie_table.php',
     'CreateOauthProvider' => $baseDir . '/app/database/migrations/2013_05_30_174702_create_oauth_provider.php',
     'CreatePasswordRemindersTable' => $baseDir . '/app/database/migrations/2013_05_30_173611_create_password_reminders_table.php',
+    'CreateProblemeTable' => $baseDir . '/app/database/migrations/2013_11_24_054709_create_probleme_table.php',
     'CreateSessionTable' => $baseDir . '/app/database/migrations/2013_05_30_140241_create_session_table.php',
     'CreateUserOauthProvider' => $baseDir . '/app/database/migrations/2013_05_30_174715_create_user_oauth_provider.php',
     'CreateUserTable' => $baseDir . '/app/database/migrations/2013_05_30_174556_create_user_table.php',
@@ -607,6 +610,7 @@ return array(
     'Jeremeamia\\SuperClosure\\SerializableClosure' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/SerializableClosure.php',
     'Jeremeamia\\SuperClosure\\Visitor\\ClosureFinderVisitor' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/Visitor/ClosureFinderVisitor.php',
     'Jeremeamia\\SuperClosure\\Visitor\\MagicConstantVisitor' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/Visitor/MagicConstantVisitor.php',
+    'MapController' => $baseDir . '/app/controllers/MapController.php',
     'Monolog\\ErrorHandler' => $vendorDir . '/monolog/monolog/src/Monolog/ErrorHandler.php',
     'Monolog\\Formatter\\ChromePHPFormatter' => $vendorDir . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',
     'Monolog\\Formatter\\ElasticaFormatter' => $vendorDir . '/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php',
