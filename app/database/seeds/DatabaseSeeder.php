@@ -2,16 +2,20 @@
 
 class DatabaseSeeder extends Seeder {
 
-	/**
-	 * Run the database seeds.
-	 *
-	 * @return void
-	 */
-	public function run()
-	{
-		Eloquent::unguard();
+    public function run()
+    {
+        $this->call('CatogrieTableSeeder');
 
-		// $this->call('UserTableSeeder');
-	}
+        $this->command->info('User table seeded!');
+    }
+
+}
+
+class CatogrieTableSeeder extends Seeder {
+
+    public function run()
+    {
+        Catogrie::create(['name' => 'addiction','descreption'=> 'test test test']);
+    }
 
 }
