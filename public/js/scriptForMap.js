@@ -1,5 +1,5 @@
 
-var x,y;
+var x,y,p;
 
 function getLocation()
   {
@@ -11,6 +11,7 @@ function getLocation()
   }
 function showPosition(position)
   {
+  p=position;
   x	= position.coords.latitude ;
   y = position.coords.longitude;
   alert(x+" // " + y);	

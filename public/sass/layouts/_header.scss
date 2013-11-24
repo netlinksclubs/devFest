@@ -428,16 +428,27 @@ body{
 	margin: 0 3px;
 }
 
+
 .can-help{
-	background-image:url(images/canhelp.png);
-	background-position:0 0;
-	background-repeat: no-repeat;
+  background-image:url(../img/canhelp.png);
+  background-position:0 0;
+  background-repeat: no-repeat;
+}
+
+.can-help:hover{
+  background-image:url(../img/canhelp2.png);
+  color: #00d20a;
 }
 
 .needs-help{
-	background-image:url(images/needhelp.png);
-	background-position:0 0;
-	background-repeat: no-repeat;
+  background-image:url(../img/needhelp.png);
+  background-position:0 0;
+  background-repeat: no-repeat;
+}
+
+.needs-help:hover{
+  background-image:url(../img/needhelp2.png);
+  color: #ff6e6e;
 }
 
 header{
