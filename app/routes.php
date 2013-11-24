@@ -11,5 +11,11 @@
 |
 */
 
+Route::get('/match',function(){
+	$req = Request2::where('needHelp', '=', 0)->firstOrFail();
+	return $req->user_id;
+});
+
 Route::controller('map', 'MapController');
 Route::controller('/', 'HomeController');
+

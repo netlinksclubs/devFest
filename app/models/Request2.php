@@ -1,9 +1,7 @@
 <?php
 
-use Illuminate\Auth\UserInterface;
-use Illuminate\Auth\Reminders\RemindableInterface;
 
-class Request extends Eloquent implements UserInterface, RemindableInterface {
+class Request2 extends Eloquent{
 
     /**
      * The database table used by the model.
@@ -18,8 +16,8 @@ class Request extends Eloquent implements UserInterface, RemindableInterface {
      * @return array
      * @author Mustapha Ben Chaaben
      **/
-    public function oauth_providers()
+    public function user()
     {
-        return $this->belongsTo('User');
+        return $this->hasOne('User');
     }
 }
