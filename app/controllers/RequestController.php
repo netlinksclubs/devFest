@@ -9,7 +9,7 @@ class RequestController extends BaseLayoutController {
      **/
     public function postNeedhelp()
     {
-     	$this->createRequest();   
+     	$this->createRequest(1, Input::get('latitude'), Input::get('longitude'));   
     }
 
     /**
@@ -20,18 +20,17 @@ class RequestController extends BaseLayoutController {
      **/
     public function getWanttohelp()
     {
-        $this->createRequest(0);
+        $this->createRequest(0, Input::get('latitude'), Input::get('longitude'));
     }
 
-    private function createRequest($needhelp = 1) {
+    private function createRequest($needhelp, $latitude , $longitude) {
     	$user = Auth::user();
 
         $request = new Request2();
         $request->done = 0;
         $request->needHelp = 1;
-
-        $request->latitude = Input::get('latitude');;
-        $request->longitude = Input::get('longitude');;
+        $request->latitude = is_null($latitude) ? 36.843529 : $latitude;
+        $request->longitude = is_null($longitude) ? 10.197799 : $longitude;
 
 		$user->requests()->save($request);
     }

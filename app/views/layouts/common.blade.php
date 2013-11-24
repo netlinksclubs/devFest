@@ -77,12 +77,7 @@
 			window.jQuery ||
 			document.write('<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"><\/script>');
 
-			var baseURL = "{{ URL::to('') }}",
-				Config = {
-					facebook: {
-						appID: {{ Config::get('oauthServices.facebook.key'); }}
-					}
-				};
+			var baseURL = "{{ URL::to('') }}";
 		</script>
 		{{ HTML::script('https://maps.googleapis.com/maps/api/js?key=AIzaSyAKhs4sj23T-h3UrhMGvDrWFGFpGeKPrIc&sensor=true') }}
 		{{ HTML::script('js/main.js') }}
