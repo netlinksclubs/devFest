@@ -1,20 +1,11 @@
-<div id="home-index">
-	@if( Auth::check() )
-		<div class="information_box">
-			You are logged as {{ Auth::user()->fullName() }}
-		</div>
-	@endif
-	<h1>Start by reporting it</h1>
-	<article>
-		If you know somewhere polluted, take the first step and report it to the world. You will be surprised by the community of people striving to clean this world.
-	</article>
 
-	<ul id="reportbutton">
-		@if(Auth::guest())
-			<li><a href="{{ URL::to('auth/google'); }}">Google plus</a></li>
-		@else
-			<li><a href="{{ URL::to('request/needhelp'); }}">I need some help</a></li>
-			<li><a href="{{ URL::to('request/wanttohelp'); }}">I want to help</a></li>
-		@endif
-	</ul>
-</div>
+		<div class="map-container">
+			<iframe style="width:100%;height:100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/?ie=UTF8&amp;ll=46.75984,1.738281&amp;spn=11.142071,26.784668&amp;t=m&amp;z=6&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/?ie=UTF8&amp;ll=46.75984,1.738281&amp;spn=11.142071,26.784668&amp;t=m&amp;z=6&amp;source=embed" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+		</div>
+
+		<div class="bottom-menu">
+			<button class="needs-help">Needs Help</button>
+			<button class="can-help">Can Help</button>
+		</div>
+
+

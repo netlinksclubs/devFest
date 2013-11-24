@@ -30,3 +30,4 @@ App::singleton('google', function()
 {
     return new apis\GoogleProvider();
 });
+

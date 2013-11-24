@@ -1,17 +1,12 @@
 header {
-	position: relative;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 1px;
+	left: 50px;
 	margin: 0;
-	padding: 0;
-	
-	overflow: hidden;;
-
-	height: 280px;
-	
-	background:#dffbfd url("../img/bg.png") repeat-x bottom ;
-
-	-webkit-animation:sunshine 6s ease-out 0s;
-
-	font-weight: normal;
+	padding: 5px 5px;
+	z-index: 999999;
 }
 
 #container {
@@ -20,11 +15,11 @@ header {
 }
 
 #logo {
-	margin:0;
+	margin:0 0 0 -80px;
 	padding:5px 0 0 0;
 
 	img {
-		margin:0 10px 0 0;
+		margin:0 10px 0 -40px;
 		
 		float: left;
 	}
@@ -393,4 +388,181 @@ header nav ul {
 .factory2
 {
 	-webkit-transform:scale(0.75,0.75);
+}
+
+
+/* Map page */
+
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.map-container{
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: relative;
+	z-index: 1;
+}
+
+.bottom-menu{
+	background-color: rgba(255,255,255,0.5);
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 15px 5px;
+	z-index: 999999;
+}
+
+
+.bottom-menu button
+{
+	width: 200px;
+	margin: 0 3px;
+}
+
+.can-help{
+	background-image:url(images/canhelp.png);
+	background-position:0 0;
+	background-repeat: no-repeat;
+}
+
+.needs-help{
+	background-image:url(images/needhelp.png);
+	background-position:0 0;
+	background-repeat: no-repeat;
+}
+
+header{
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	margin: 0;
+	padding: 5px 5px;
+	z-index: 999999;
+	background:rgba(255,255,255,0.9);
+}
+
+
+
+.popup{
+	height: 700px; 
+	width: 30%;
+	background: rgba(255,255,255,1);
+	position: fixed;
+	top: 1px;
+	left: 35%;
+	padding: 100px;
+	margin: 0;
+	padding: 5px 5px;
+	z-index: 999999;
+	border: solid 5px #000;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+form
+{
+	width:30%;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Pontano Sans', sans-serif;
+}
+button
+{
+	border: none;
+	background: #f4f4f4;
+	padding: 10px 7px;
+	width: 50%;
+	float: left;
+	font-size: 20px;
+	color: #515151;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.33);
+	font-family: 'Pontano Sans', sans-serif;
+	cursor: pointer;
+	translition:ease background 1s;
+}
+
+
+
+.tel
+{
+	font-size: 20px;
+	width: 100%;
+	height: 45px;
+	margin: 20px 0;
+	padding: 5px 60px;
+	border: 0;
+	background: #f4f4f4;
+	box-shadow: box-shadow: 0 1px 1px rgba(0,0,0,0.33);
+	font-family: 'Pontano Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.tel{
+	background-image:url(images/tel.png);
+	background-position: 7px  5px;
+	background-repeat: no-repeat; 
+}
+
+.tel:hover{
+	background-image:url(images/tel2.png);
+}
+
+
+
+form section
+{
+	width: 100%;
+}
+
+.probleme button
+{
+	width: 30%;
+}
+
+.problemeList{
+	width: 30%;
+	margin: 5px 1.666%; 
+	text-align: left;
+	font-size: 22px;
+	float: left;
+	visibility: hidden;
+}
+
+.problemeList input{
+	margin: 18px;
+}
+
+.probleme .middle
+{
+	margin:0 5%;
+}
+
+.save{
+	width: 100%;
+	margin-top: 30px; 
+	background-image:url(images/save.png);
+	background-position: 9px 7px;
+	background-repeat: no-repeat; 
+}
+
+.save:hover{
+		background-image:url(images/save2.png);
+		color: #32d600;
+}
+
+
+.textForm{
+	margin-top: 60px;
+	margin-bottom: 20px;
 }

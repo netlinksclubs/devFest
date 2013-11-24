@@ -30,8 +30,7 @@
 			<div id="container" class="common-container">
 				<div id="logo">
 					<a href="{{ URL::to('/') }}">
-						<img src="{{ URL::asset('img/logo.png') }}" height="40px" width="40px">
-						<span id="name">Guide me</span>
+						<img src="{{ URL::asset('img/logo.png') }}">
 					</a>
 				</div>
 				<nav>
@@ -43,72 +42,10 @@
 						@endif
 					</ul>
 				</nav>
-				<div id="slogan">Clean the world,<br>one place at a time.</div>
+				
 			</div>
-			<div id="animation1">
-				<div class="tree">
-					<div class="top">
-						<div class="dot1"></div>
-						<div class="dot2"></div>
-					</div>
-					<div class="bottom" ></div>
-					<div class="middle1"></div>
-					<div class="middle2"></div>
-				</div>
-
-				<div class="tree2">
-					<div class="top">
-						<div class="dot1"></div>
-						<div class="dot2"></div>
-					</div>
-					<div class="bottom" ></div>
-					<div class="middle1"></div>
-					<div class="middle2"></div>
-				</div>
-
-				<div class="tree3">
-					<div class="top">
-						<div class="dot1"></div>
-						<div class="dot2"></div>
-					</div>
-					<div class="bottom" ></div>
-					<div class="middle1"></div>
-					<div class="middle2"></div>
-				</div>
-
-
-				<div class="flower"></div>
-				<div class="flower2"></div>
-				<div class="herb"></div>
 			
-			</div>
 
-			<div id="animation2">
-				<div class="tree4">
-					<div class="top">
-						<div class="dot1"></div>
-						<div class="dot2"></div>
-					</div>
-					<div class="bottom" ></div>
-					<div class="middle1"></div>
-					<div class="middle2"></div>
-				</div>
-
-				<div class="stem1" ></div>
-				<div class="stem2" ></div>
-				<div class="stem3" ></div>
-
-
-				<div class="factorycontainer1">
-					<div class="factory1"></div>
-				</div>
-				<div class="factorycontainer2">
-					<div class="factory2"></div>
-				</div>
-			</div>
-
-
-			<div id="arc"></div>
 		</header>
 		<section class="common">
 			<div id="page-content">
